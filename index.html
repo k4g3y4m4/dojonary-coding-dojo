@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dojonary</title>
+</head>
+<body>
+    <div class="top-nav">
+        <h1 class="left-nav">Dojonary</h1>
+        <input type="text" class="search"placeholder="Search">
+        <button class="log" onclick="login(this)">Login</button>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="column col-2">
+                <!--First Definition-->
+                <div class="container">   
+                    <div class="container-body">
+                        <div class="row">
+                            <div class="left-definition">
+                                <h3>ninja</h3>
+                                <span>noun</span>
+                                <p>Plural: ninjas</p>
+                                <button class="like" onclick="alertlike()">13 Likes</button>
+                            </div>
+                            <div class="right-definition">
+                                <p>A practicioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Definition-->
+                <div class="container">   
+                    <div class="container-body">
+                        <div class="row">
+                            <div class="left-definition">
+                                <h3>ninja</h3>
+                                <span>noun</span>
+                                <p>Plural: ninjas</p>
+                                <button class="like">37 Likes</button>
+                            </div>
+                            <div class="right-definition">
+                                <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="column">
+                <div class="container">
+                    <div class="container-body-2">
+                        <span class="add">Dojonary is defined by YOU</span>
+                        <div class="add-button">
+                            <button class="add-definition" onclick="remove(this)">Add a definition</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
